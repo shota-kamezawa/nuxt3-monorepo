@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
-    "typecheck": "tsc --noEmit"
+    "typecheck": "vue-tsc --noEmit"
   },
   "packageManager": "pnpm@9.6.0",
   "dependencies": {
-    "@nuxt/kit": "^3.12.4"
+    "@packages/utils": "workspace:*",
+    "typescript": "^5.5.4",
+    "vue": "^3.4.34"
   },
   "devDependencies": {
     "@repo/tsconfig": "workspace:*",
-    "typescript": "^5.5.4"
+    "vue-tsc": "^2.0.29"
   }
 }

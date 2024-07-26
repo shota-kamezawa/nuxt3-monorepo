@@ -3,15 +3,20 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev --port=3002",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "typecheck": "nuxt typecheck"
+    "build": "nuxi build",
+    "dev": "nuxi dev --port=3002",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
+    "postinstall": "nuxi prepare",
+    "typecheck": "nuxi typecheck"
   },
   "dependencies": {
+    "@packages/ui": "workspace:*",
+    "@packages/utils": "workspace:*",
     "nuxt": "^3.12.4",
     "vue": "latest"
+  },
+  "devDependencies": {
+    "vue-tsc": "^2.0.29"
   }
 }

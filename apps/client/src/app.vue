@@ -1,4 +1,8 @@
+<script setup lang="ts">
+import Message from '@packages/ui/components/message.vue';
+</script>
+
 <template>
-  <message bg-color="#008C73">Client</message>
+  <Message bg-color="#008C73">Client</Message>
 </template>
 

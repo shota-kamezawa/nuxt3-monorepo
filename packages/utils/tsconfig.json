@@ -4,8 +4,8 @@
     "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json",
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./*"],
-      "@packages/utils/*": ["./node_modules/@packages/utils/*"]
+      "~/*": ["./src/*"],
+      "@packages/utils/*": ["./*"]
     }
   }
 }
