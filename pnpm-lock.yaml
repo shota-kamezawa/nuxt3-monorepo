@@ -10,12 +10,6 @@ importers:
 
   apps/agent:
     dependencies:
-      '@packages/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
-      '@packages/utils':
-        specifier: workspace:*
-        version: link:../../packages/utils
       nuxt:
         specifier: ^3.12.4
         version: 3.12.4(@parcel/watcher@2.4.1)(@types/node@20.14.12)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.19.0)(terser@5.31.3)(typescript@5.5.4)(vite@5.3.4(@types/node@20.14.12)(terser@5.31.3))(vue-tsc@2.0.29(typescript@5.5.4))
@@ -29,12 +23,6 @@ importers:
 
   apps/client:
     dependencies:
-      '@packages/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
-      '@packages/utils':
-        specifier: workspace:*
-        version: link:../../packages/utils
       nuxt:
         specifier: ^3.12.4
         version: 3.12.4(@parcel/watcher@2.4.1)(@types/node@20.14.12)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.19.0)(terser@5.31.3)(typescript@5.5.4)(vite@5.3.4(@types/node@20.14.12)(terser@5.31.3))(vue-tsc@2.0.29(typescript@5.5.4))
@@ -48,9 +36,6 @@ importers:
 
   packages/ui:
     dependencies:
-      '@packages/utils':
-        specifier: workspace:*
-        version: link:../utils
       typescript:
         specifier: ^5.5.4
         version: 5.5.4

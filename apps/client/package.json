@@ -11,8 +11,6 @@
     "typecheck": "nuxi typecheck"
   },
   "dependencies": {
-    "@packages/ui": "workspace:*",
-    "@packages/utils": "workspace:*",
     "nuxt": "^3.12.4",
     "vue": "latest"
   },

@@ -10,9 +10,14 @@ export default defineNuxtConfig({
     tsConfig: {
       compilerOptions: {
         paths: {
-          '@packages/utils/*': ['../node_modules/@packages/utils/*'],
+          '@packages/ui/*': ['../../../packages/ui/*'],
+          '@packages/utils/*': ['../../../packages/utils/*'],
         },
       },
+      include: [
+        '../../../packages/ui/**/*',
+        '../../../packages/utils/**/*',
+      ],
     },
   },
 })
