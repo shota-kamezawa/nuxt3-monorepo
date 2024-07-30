@@ -1,6 +1,7 @@
 {
   "extends": "@repo/tsconfig/base.json",
   "compilerOptions": {
+    "outDir": "./dist",
     "composite": true,
     "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json",
     "baseUrl": ".",
@@ -8,5 +9,9 @@
       "~/*": ["./src/*"],
       "@packages/utils/*": ["./*"]
     }
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

@@ -14,10 +14,6 @@ export default defineNuxtConfig({
           '@packages/utils/*': ['../../../packages/utils/*'],
         },
       },
-      include: [
-        '../../../packages/ui/**/*',
-        '../../../packages/utils/**/*',
-      ],
     },
   },
 })

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
+    "build": "vue-tsc",
     "typecheck": "vue-tsc --noEmit"
   },
   "packageManager": "pnpm@9.6.0",
