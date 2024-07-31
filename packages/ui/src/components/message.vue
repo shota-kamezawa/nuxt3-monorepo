@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getDateStringA, getDateStringB } from '@packages/utils/src/date/getDate';
+import { getDateStringA, getDateStringB } from '@packages/utils/date/getDate';
 
 const props = defineProps<{
   bgColor: string

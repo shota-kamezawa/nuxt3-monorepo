@@ -1,12 +1,12 @@
 {
   "extends": "@repo/tsconfig/base.json",
   "compilerOptions": {
+    "rootDir": "./src",
     "outDir": "./dist",
     "composite": true,
-    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json",
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
-      "~/*": ["./src/*"],
+      "~/*": ["./*"],
       "@packages/utils/*": ["./*"]
     }
   },

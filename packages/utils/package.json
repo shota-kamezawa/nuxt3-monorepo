@@ -4,15 +4,17 @@
   "main": "index.ts",
   "scripts": {
     "build": "tsc",
+    "clean": "rimraf ./dist ./*.tsbuildinfo",
     "typecheck": "tsc --noEmit"
   },
   "packageManager": "pnpm@9.6.0",
   "dependencies": {
+    "@repo/tsconfig": "workspace:*",
     "@types/lodash.clonedeep": "^4.5.9",
     "lodash.clonedeep": "^4.5.0",
     "typescript": "^5.5.4"
   },
   "devDependencies": {
-    "@repo/tsconfig": "workspace:*"
+    "rimraf": "^6.0.1"
   }
 }

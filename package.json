@@ -2,8 +2,9 @@
   "name": "nuxt3-monorepo",
   "version": "1.0.0",
   "scripts": {
-    "dev": "pnpm run -r dev",
-    "typecheck": "pnpm run -r typecheck"
+    "build:agent": "pnpm --filter agent-app run generate",
+    "build:client": "pnpm --filter client-app run generate",
+    "build:packages": "pnpm --filter @packages/utils run build && pnpm --filter @packages/ui run build"
   },
   "packageManager": "pnpm@9.6.0"
 }
