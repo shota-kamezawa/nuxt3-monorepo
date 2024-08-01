@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import userDataExample from '~~/examples/user.json';
+import userDataExample from '@root/examples/user.json';
 import { getString as getStringX } from '@apps/client/getString';
 import { getString as getStringY } from '@packages/ui/getString';
 import Message from '@packages/ui/components/message.vue';

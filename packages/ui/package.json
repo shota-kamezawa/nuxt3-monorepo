@@ -4,11 +4,11 @@
   "type": "module",
   "main": "index.ts",
   "scripts": {
-    "build": "vue-tsc --project . --project ../utils",
+    "build": "vue-tsc",
     "clean": "rimraf ./dist ./*.tsbuildinfo",
     "lint": "eslint .",
     "test": "vitest run",
-    "typecheck": "tsc --project ../utils && vue-tsc --noEmit"
+    "typecheck": "vue-tsc --noEmit"
   },
   "packageManager": "pnpm@9.6.0",
   "dependencies": {

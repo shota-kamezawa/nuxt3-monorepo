@@ -7,8 +7,7 @@
     "types": ["vue"],
     "baseUrl": "./src",
     "paths": {
-      "~~/*": ["../../../*"],
-      "@@/*": ["../../../*"],
+      "@root/examples/*": ["../../../examples/*"],
       "@packages/utils/*": ["../../utils/src/*"]
     }
   },

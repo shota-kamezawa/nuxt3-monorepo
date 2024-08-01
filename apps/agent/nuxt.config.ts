@@ -8,6 +8,8 @@ export default defineNuxtConfig({
   srcDir: "./src",
 
   alias: {
+    '@root/examples': resolve(__dirname, '../../examples'),
+    '@apps/agent': resolve(__dirname, 'src'),
     '@packages/ui': resolve(__dirname, '../../packages/ui/src'),
     '@packages/utils': resolve(__dirname, '../../packages/utils/src'),
   },

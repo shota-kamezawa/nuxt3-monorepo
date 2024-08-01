@@ -16,8 +16,7 @@ export default defineNuxtConfig({
   },
 
   alias: {
-    '~~': resolve(__dirname, '../..'),
-    '@@': resolve(__dirname, '../..'),
+    '@root/examples': resolve(__dirname, '../../examples'),
     '@apps/client': resolve(__dirname, 'src'),
     '@packages/ui': resolve(__dirname, '../../packages/ui/src'),
     '@packages/utils': resolve(__dirname, '../../packages/utils/src'),

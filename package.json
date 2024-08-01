@@ -4,11 +4,15 @@
   "scripts": {
     "build:agent": "pnpm --filter agent-app run build",
     "build:client": "pnpm --filter client-app run generate",
-    "build:packages": "pnpm exec vue-tsc --project ./packages/utils --project ./packages/ui",
+    "build:packages": "pnpm --filter @packages/utils run build && pnpm --filter @packages/ui run build",
     "clean:packages": "pnpm --filter @packages/* run clean",
-    "lint:typecheck": "pnpm run build:packages && pnpm --filter *-app run typecheck",
+    "dev": "pnpm --filter *-app run dev",
+    "dev:agent": "pnpm --filter client-app run dev",
+    "dev:client": "pnpm --filter client-app run dev",
+    "lint": "pnpm --recursive run lint",
     "test": "vitest run",
-    "test:coverage": "pnpm run test --coverage.enabled=true"
+    "test:coverage": "pnpm run test --coverage.enabled=true",
+    "typecheck": "pnpm run build:packages && pnpm --filter *-app run typecheck"
   },
   "packageManager": "pnpm@9.6.0",
   "devDependencies": {
