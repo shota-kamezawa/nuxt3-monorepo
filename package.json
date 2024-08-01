@@ -2,10 +2,13 @@
   "name": "nuxt3-monorepo",
   "version": "1.0.0",
   "scripts": {
-    "build:agent": "pnpm --filter agent-app run generate",
+    "build:agent": "pnpm --filter agent-app run build",
     "build:client": "pnpm --filter client-app run generate",
     "build:packages": "pnpm --filter @packages/utils run build && pnpm --filter @packages/ui run build",
-    "clean:packages": "pnpm --filter @packages/* run clean"
+    "clean:packages": "pnpm --filter @packages/* run clean",
+    "lint:typecheck": "pnpm run build:packages && pnpm --recursive run typecheck",
+    "test": "vitest run",
+    "test:coverage": "pnpm run test --coverage.enabled=true"
   },
   "packageManager": "pnpm@9.6.0",
   "devDependencies": {

@@ -17,9 +17,6 @@
     "vitest.config.ts"
   ],
   "references": [
-    // {
-    //   "path": "./tsconfig.dev.json"
-    // },
     {
       "path": "../utils"
     }
