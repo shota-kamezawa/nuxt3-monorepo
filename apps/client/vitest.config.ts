@@ -1,12 +1,26 @@
-import { mergeConfig } from 'vite';
-import baseVitestConfig from '@repo/vitest-config/vitest.config.js';
+// import pluginTsconfigPaths from 'vite-tsconfig-paths';
+import { resolve } from 'node:path';
+import { defineProject } from 'vitest/config';
 
+export default defineProject({
+  plugins: [
+    // pluginTsconfigPaths({ root: '.' }),
+  ],
 
-export default mergeConfig(baseVitestConfig, {
   test: {
-    coverage: {
-      include: ['src/**/*.[jt]s']
+    alias: {
+      '@root/examples': resolve(import.meta.dirname, '../../examples'),
+      '@apps/client': resolve(__dirname, 'src'),
+      '@packages/ui': resolve(import.meta.dirname, '../../packages/ui/src'),
+      '@packages/utils': resolve(import.meta.dirname, '../../packages/utils/src'),
     },
-    include: ['src/**/*.test.[jt]s']
-  }
+
+    include: [
+      './src/**/*.test.ts',
+    ],
+
+    sequence: {
+      concurrent :true,
+    },
+  },
 });

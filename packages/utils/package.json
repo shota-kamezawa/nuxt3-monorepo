@@ -1,26 +1,25 @@
 {
-  "name": "client-app",
-  "private": true,
+  "name": "@packages/utils",
+  "version": "1.0.0",
   "type": "module",
+  "main": "index.ts",
   "scripts": {
-    "build": "nuxi build",
-    "dev": "nuxi dev --port=3002",
-    "generate": "nuxi generate",
+    "build": "tsc",
+    "clean": "rimraf ./dist ./*.tsbuildinfo",
     "lint": "eslint .",
-    "preview": "nuxi preview",
-    "postinstall": "nuxi prepare",
     "test": "vitest run",
-    "typecheck": "nuxi typecheck"
+    "typecheck": "tsc --noEmit"
   },
+  "packageManager": "pnpm@9.6.0",
   "dependencies": {
-    "nuxt": "3.12.4",
-    "typescript": "5.5.4",
-    "vue": "3.4.35"
+    "@repo/tsconfig": "workspace:*",
+    "@types/lodash.clonedeep": "4.5.9",
+    "lodash.clonedeep": "4.5.0",
+    "typescript": "5.5.4"
   },
   "devDependencies": {
     "@eslint/eslintrc": "2.1.4",
     "@eslint/js": "8.57.0",
-    "@nuxt/eslint-plugin": "0.3.13",
     "@types/eslint__eslintrc": "2.1.2",
     "@types/eslint__js": "8.42.3",
     "@typescript-eslint/eslint-plugin": "7.18.0",
@@ -39,7 +38,6 @@
     "vite": "5.3.5",
     "vite-tsconfig-paths": "4.3.2",
     "vitest": "2.0.4",
-    "vue-eslint-parser": "9.4.3",
-    "vue-tsc": "2.0.29"
+    "vue-eslint-parser": "9.4.3"
   }
 }

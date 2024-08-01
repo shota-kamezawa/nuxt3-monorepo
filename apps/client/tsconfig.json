@@ -1,10 +1,12 @@
 {
   // https://nuxt.com/docs/guide/concepts/typescript
-  "extends": ["./.nuxt/tsconfig.json",  "@repo/tsconfig/base.json"],
-  "compilerOptions": {
-    "incremental": false,
-    "paths": {
-      "@packages/*": ["../../packages/*"]
+  "extends": "./.nuxt/tsconfig.json",
+  "references": [
+    {
+      "path": "../../packages/ui"
+    },
+    {
+      "path": "../../packages/utils"
     }
-  }
+  ]
 }

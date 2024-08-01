@@ -4,22 +4,15 @@
     "composite": true,
     "rootDir": "./src",
     "outDir": "./dist",
-    "types": ["vue"],
     "baseUrl": "./src",
     "paths": {
       "@root/examples/*": ["../../../examples/*"],
-      "@packages/utils/*": ["../../utils/src/*"]
+      "@packages/utils/*": ["./*"]
     }
   },
   "exclude": [
     "dist",
     "node_modules",
-    "eslint.config.js",
     "vitest.config.ts"
-  ],
-  "references": [
-    {
-      "path": "../utils"
-    }
   ]
 }

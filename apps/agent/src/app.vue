@@ -1,6 +1,7 @@
+<script setup lang="ts">
+import Message from '@packages/ui/components/message.vue';
+</script>
+
 <template>
-  <div>
-    <message bg-color="#FD6C48">Agent</message>
-    <slot />
-  </div>
+  <Message bg-color="#FD6C48">Agent</Message>
 </template>

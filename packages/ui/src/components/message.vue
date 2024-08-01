@@ -1,12 +1,17 @@
 <script setup lang="ts">
+import { getDateStringB } from '@packages/utils/date/getDate';
+
 const props = defineProps<{
   bgColor: string
 }>()
+
+getDateStringB();
 </script>
 <template>
   <div class="message" :style="{ backgroundColor: props.bgColor }" >
     <slot />
   </div>
+  <div>{{ getDateStringB() }}</div>
 </template>
 <style  scoped>
 .message {

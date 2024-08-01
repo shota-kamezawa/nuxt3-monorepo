@@ -10,8 +10,7 @@ export default defineProject({
   test: {
     alias: {
       '@root/examples': resolve(import.meta.dirname, '../../examples'),
-      '@packages/ui': resolve(import.meta.dirname, './src'),
-      '@packages/utils': resolve(import.meta.dirname, '../utils/src'),
+      '@packages/utils': resolve(import.meta.dirname, './src'),
     },
 
     include: [
