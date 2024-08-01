@@ -1,0 +1,7 @@
+{
+  "summary": "user data example",
+  "value": {
+    "id": 123,
+    "name": "Taro Tanaka"
+  }
+}

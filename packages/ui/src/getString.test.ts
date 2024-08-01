@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest';
 
-import { getString, utilsGetString } from './getString';
+import { getString, getUserName, utilsGetString, utilsGetUserName } from './getString';
 
 describe(`${getString.name}`, () => {
   test('return value is valid', () => {
@@ -11,5 +11,17 @@ describe(`${getString.name}`, () => {
 describe('utilsGetString', () => {
   test('return value is valid', () => {
     expect(utilsGetString()).toBe('<@packages/utils>');
+  });
+});
+
+describe(`${getUserName.name}`, () => {
+  test('return value is valid', () => {
+    expect(getUserName()).toBe('Taro Tanaka');
+  });
+});
+
+describe('utilsGetUserName', () => {
+  test('return value is valid', () => {
+    expect(utilsGetUserName()).toBe('Taro Tanaka');
   });
 });

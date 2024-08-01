@@ -9,6 +9,8 @@ export default defineProject({
 
   test: {
     alias: {
+      '~~': resolve(import.meta.dirname, '../..'),
+      '@@': resolve(import.meta.dirname, '../..'),
       '@packages/utils': resolve(import.meta.dirname, './src'),
     },
 
