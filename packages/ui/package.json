@@ -4,17 +4,17 @@
   "type": "module",
   "main": "index.ts",
   "scripts": {
-    "build": "vue-tsc",
+    "build": "vue-tsc --project . --project ../utils",
     "clean": "rimraf ./dist ./*.tsbuildinfo",
     "lint": "eslint .",
     "test": "vitest run",
-    "typecheck": "vue-tsc --noEmit"
+    "typecheck": "tsc --project ../utils && vue-tsc --noEmit"
   },
   "packageManager": "pnpm@9.6.0",
   "dependencies": {
     "@repo/tsconfig": "workspace:*",
-    "typescript": "^5.5.4",
-    "vue": "^3.4.34"
+    "typescript": "5.5.4",
+    "vue": "3.4.35"
   },
   "devDependencies": {
     "@eslint/eslintrc": "2.1.4",

@@ -4,15 +4,17 @@
   "scripts": {
     "build:agent": "pnpm --filter agent-app run build",
     "build:client": "pnpm --filter client-app run generate",
-    "build:packages": "pnpm --filter @packages/utils run build && pnpm --filter @packages/ui run build",
+    "build:packages": "pnpm exec vue-tsc --project ./packages/utils --project ./packages/ui",
     "clean:packages": "pnpm --filter @packages/* run clean",
-    "lint:typecheck": "pnpm run build:packages && pnpm --recursive run typecheck",
+    "lint:typecheck": "pnpm run build:packages && pnpm --filter *-app run typecheck",
     "test": "vitest run",
     "test:coverage": "pnpm run test --coverage.enabled=true"
   },
   "packageManager": "pnpm@9.6.0",
   "devDependencies": {
     "@vitest/coverage-v8": "2.0.4",
-    "vitest": "2.0.4"
+    "typescript": "5.5.4",
+    "vitest": "2.0.4",
+    "vue-tsc": "2.0.29"
   }
 }

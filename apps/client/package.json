@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "nuxt": "3.12.4",
-    "vue": "latest"
+    "typescript": "5.5.4",
+    "vue": "3.4.35"
   },
   "devDependencies": {
     "@eslint/eslintrc": "2.1.4",
