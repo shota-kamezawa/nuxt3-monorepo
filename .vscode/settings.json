@@ -1,8 +1,4 @@
 {
   "eslint.useFlatConfig": true,
-  "eslint.workingDirectories": [
-    "./apps/client",
-    "./packages/ui",
-    "./packages/utils"
-  ]
+  "eslint.workingDirectories": [{ "mode": "auto" }]
 }
